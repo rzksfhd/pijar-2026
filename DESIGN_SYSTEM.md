@@ -3,8 +3,8 @@
 ## Brand Identity
 
 ### Name
-**PIJAR** - Program for Innovation and Joint Action for Resilience
-**Tagline**: Pertukaran Ilmu dan Pelajar
+**PIJAR** - Universitas Terbuka
+**Tagline**: Program for Innovation and Joint Action for Resilience
 
 ### Theme
 "Beyond Distance: Connecting Global Minds for Sustainable Development"
