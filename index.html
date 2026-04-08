@@ -683,12 +683,24 @@
         }
         
         /* ═════════════════════════════════════════════════
-           Footer
+           Footer — Tonal Elevation
         ═════════════════════════════════════════════════ */
         .footer {
-            background: var(--on_surface);
-            color: var(--surface);
+            background: linear-gradient(135deg, var(--surface_container_highest), var(--surface_dim));
+            color: var(--on_surface);
             padding: var(--space-lg) var(--space-md);
+            position: relative;
+        }
+        
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--tertiary), transparent);
+            opacity: 0.5;
         }
         
         .footer-content {
@@ -703,11 +715,11 @@
             font-family: var(--font-serif);
             font-size: 1.25rem;
             font-weight: 600;
-            color: var(--surface);
+            color: var(--on_surface);
         }
         
         .footer-brand span {
-            color: var(--primary_container);
+            color: var(--primary);
         }
         
         .footer-links {
@@ -718,31 +730,47 @@
         .footer-links a {
             font-family: var(--font-label);
             font-size: 0.875rem;
-            color: rgba(250, 249, 253, 0.6);
+            color: var(--on_surface_variant);
             text-decoration: none;
             transition: color 0.2s ease;
+            position: relative;
+        }
+        
+        .footer-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--tertiary);
+            transition: width 0.3s ease;
         }
         
         .footer-links a:hover {
-            color: var(--surface);
+            color: var(--primary);
+        }
+        
+        .footer-links a:hover::after {
+            width: 100%;
         }
         
         .footer-bottom {
             text-align: center;
             margin-top: var(--space-md);
             padding-top: var(--space-md);
-            background: var(--surface_container_high);
-            background: rgba(250, 249, 253, 0.1);
+            background: var(--surface_container);
             margin-left: calc(-1 * var(--space-md));
             margin-right: calc(-1 * var(--space-md));
             padding-left: var(--space-md);
             padding-right: var(--space-md);
+            border-radius: 0.5rem;
         }
         
         .footer-bottom p {
             font-family: var(--font-label);
             font-size: 0.75rem;
-            color: rgba(250, 249, 253, 0.5);
+            color: var(--on_surface_variant);
         }
         
         /* ═════════════════════════════════════════════════
