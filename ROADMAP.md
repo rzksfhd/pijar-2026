@@ -3,7 +3,7 @@
 ## Program Overview
 
 **PIJAR**: Program for Innovation and Joint Action for Resilience
-**Subtitle**: Pertukaran Ilmu dan Pelajar
+**Subtitle**: Program for Innovation and Joint Action for Resilience
 **Theme**: "Beyond Distance: Connecting Global Minds for Sustainable Development"
 
 ---
