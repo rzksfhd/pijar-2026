@@ -1,7 +1,6 @@
 # PIJAR International Summer Course 2026
 
 **Program for Innovation and Joint Action for Resilience**
-*Pertukaran Ilmu dan Pelajar*
 
 ## About
 
